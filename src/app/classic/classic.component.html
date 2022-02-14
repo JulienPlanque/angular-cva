@@ -1,0 +1,15 @@
+<div>
+    <h2>Test CVA injector</h2>
+<div [formGroup]="form">
+  <app-choose-quantity [increment]="10" formControlName="totalQuality"></app-choose-quantity>
+</div>
+{{this.form.controls.totalQuality.errors | json}}
+</div>
+
+<div>
+    <h2>Test CVA contructor</h2>
+<div [formGroup]="form">
+  <app-choose-quantity-control-constructor [increment]="10" formControlName="totalQualityControlConstructor"></app-choose-quantity-control-constructor>
+</div>
+{{this.form.controls.totalQualityControlConstructor.errors | json}}
+</div>
